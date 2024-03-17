@@ -8,7 +8,7 @@ require (__DIR__ . "/DirectoryTree.php");
 
 // İçe Aktarılacak Olan Dosyalar
 $incfiles = [
-    DIR_SESSION . "KernelSession.php" // Oturum Çekirdeği
+    DIR_KERNEL . "KernelSession.php" // Oturum Çekirdeği
 ];
 
 // Dosyaların uzunluğu
