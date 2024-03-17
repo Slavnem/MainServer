@@ -7,19 +7,19 @@ if(!file_exists(__DIR__ . "/DirectoryTree.php"))
 require (__DIR__ . "/DirectoryTree.php");
 
 // İçe Aktarılacak Olan Dosyalar
-$incfiles = [
+$files = [
     DIR_KERNEL . "KernelSession.php" // Oturum Çekirdeği
 ];
 
 // Dosyaların uzunluğu
-$length_incfiles = count($incfiles);
+$length_incfiles = count($files);
 
 // Eklenen dosyalar için sayaç
 $incfilecounter = 0;
 
 // Döngü ile dosyaları içe aktarma
 for($kernelcounter = 0; $kernelcounter < $length_incfiles; $kernelcounter++) {
-    $file = $incfiles[$kernelcounter]; // o turdaki dosya
+    $file = $files[$kernelcounter]; // o turdaki dosya
 
     // Dosya bulunmuyorsa
     if(!file_exists($file))
