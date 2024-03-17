@@ -1,0 +1,115 @@
+/* FONTS */
+@import url("/core/style/static/root/font.css");
+
+:root {
+    /* COLORS */
+    --color-blue: #3F418D;
+    --color-pastel-pink: #F9EDED;
+    --color-dark-charcoal: 17,26,36;
+    --color-bright-yellow: #F8EE00;
+    --color-cherry-red: #9A0001;
+    --color-off-white: #FCF7F7;
+    --color-baby-blue: #9DB0EC;
+    --color-dark-blue: #00246B;
+    --color-light-blue: #CADCFC;
+    --color-sky-blue: #9DB1EA;
+    --color-bubblegum-pink: #E47E98;
+    --color-cherry-red-v2: #C83642;
+    --color-bubblegum-pink-v2: #F4CCD2;
+    --color-forest-green: #396C2F;
+    --color-moss-green: #A3C664;
+    --color-mignight-blue: #1E2761;
+    --color-royal-blue: #408EC6;
+    --color-burgundy-red: #7A2048;
+    --color-terracotta-red: #B75A48;
+    --color-light-beige: #E8ECD6;
+    --color-muted-teal: #B2C6B6;
+    --color-pastel-olive-green: #A1BE95;
+    --color-salmon-pink: #F98866;
+    --color-deep-periwinkle: #735DA5;
+    --color-soft-lilac: #D3C5E5;
+    --color-seafoam-green: #65A4AC;
+    --color-light-blue-v2: #C4DEE5;
+    --color-teal: #1F948B;
+    --color-light-green: #69B086;
+    --color-dark-green: #31473A;
+    --color-light-gray: #EDF4F2;
+    --color-cranberry-red: #F42448;
+    --color-bubblegum: #F96674;
+    --color-deep-blue: #355E95;
+    --color-orange-red: #FB6341;
+    --color-yellow-orange: #FEBA00;
+    --color-mauve: #962E2A;
+    --color-dusty-rose: #E3867D;
+    --color-soft-blue-gray: #CEE6F2;
+    --color-dark-reddish-brown: #330000;
+    --color-taupe: #73605B;
+    --color-light-peachy-brown: #D09683;
+    --color-dark-navyblue: #1D00B4;
+    --color-bright-scarlet: #CB0000;
+    --color-light-lemon-yellow: #FBF5AA;
+    --color-teal-blue: #1995AD;
+    --color-light-blue-v3: #A1D6E2;
+    --color-light-gray-v2: #F1F1F2;
+    --color-deep-navyblue: #002C54;
+    --color-bright-red: 197,0,26;
+    --color-pale-pink: #FDF6F6;
+    --color-dark-chestnut-brown: #46211A;
+    --color-burnt-sienna: #A43820;
+    --color-soft-cream: #F1D3B2;
+    --color-dark-charcoal: #292F31;
+    --color-deep-rust: #753424;
+    --color-sky-blue: #8FAEC4;
+    --color-custom-v1: #222831;
+    --color-custom-v2: #393E46;
+    --color-custom-v3: #00ADB5;
+    --color-custom-v4: #EEEEEE;
+    --color-custom-v5: #E23E57;
+    --color-custom-v6: #EA5455;
+    --color-custom-v7: #090c0b;
+
+    /* ERROR PAGES -> 400 */
+    --error-page-background:
+        linear-gradient(145deg, rgba(0,0,0,50%), rgba(0,0,0,75%)),
+        url("/asset/global/image/background/webp/nature_cartoon.webp");
+    --error-page-backgroundcolor: var(--color-light-gray-v2);
+    --error-page-color: var(--color-off-white);
+    --error-page-font-family: "font-aeronaut";
+    --error-page-font-weight: 400;
+    --error-page-font-size: clamp(1rem, 4vw, 4rem);
+    --error-page-text-shadow: 5px 5px 25px rgba(255,255,255,0.5);
+
+    /* SERVER ERROR PAGES -> 500 */
+    --server-error-page-background:
+        linear-gradient(145deg, rgba(0,0,0,50%), rgba(0,0,0,75%)),
+        url("/asset/global/image/background/webp/nature_cartoon.webp");
+    --server-error-page-backgroundcolor: var(--color-light-gray-v2);
+    --server-error-page-color: var(--color-off-white);
+    --server-error-page-font-family: "font-aeronaut";
+    --server-error-page-font-weight: 400;
+    --server-error-page-font-size: clamp(1rem, 4vw, 4rem);
+    --server-error-page-text-shadow: 5px 5px 25px rgba(255,255,255,0.5);
+
+    /* SIGN PAGES --> LOGIN | REGISTER */
+    --sign-page-color: var(--color-off-white);
+    --sign-page-backgroundcolor: var(--color-light-gray-v2);
+
+    --sign-page-fontfamily: "font-cooper-hewitt-medium";
+
+    --sign-page-sender-color: var(--color-off-white);
+    --sign-page-sender-background: var(--color-forest-green);
+    --sign-page-sender-fontfamily: "font-cooper-hewitt-medium";
+    --sign-page-sender-hover-color: var(--color-dark-charcoal);
+    --sign-page-sender-hover-background: var(--color-off-white);
+
+    --sign-page-color-btn-passwordshow: var(--color-forest-green);
+    --sign-page-background-btn-passwordshow: "transparent";
+    --sign-page-color-hover-btn-passwordshow: var(--color-dark-charcoal);
+}
+
+/* ALL */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
