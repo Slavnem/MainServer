@@ -1,8 +1,8 @@
 <?php
 // Olması gereken dosyalar
 $files = [
-    DIR_SESSION . "Session.php", // Oturum
-    DIR_API ."KernelApi.php" // API Çekirdeği
+    DIR_KERNEL ."KernelApi.php", // API Çekirdeği
+    DIR_SESSION . "Session.php" // Oturum
 ];
 
 // Dosyaların uzunluğu
