@@ -3,7 +3,7 @@
 
 `EN: Designing an open source website for Slavnem and preparing it for official launch. Security and bug fixes are in progress. Developing and sharing. Running on a local Debian (Linux) server...`
 
-## Packages
+# Packages
 `Nginx`
 `MySQL`
 `PHP 8.3`
