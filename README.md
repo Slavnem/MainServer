@@ -10,7 +10,7 @@
 </p>
 
 <!-- İhtiyaçkar -->
-<h2 align="center">🌟 Requirements</h2>
+#🌟 Requirements
 `Linux/GNU`
 `Nginx`
 `MySQL`
