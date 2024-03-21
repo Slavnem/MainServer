@@ -1,5 +1,5 @@
 <!-- Başlık -->
-<h1 align="center">🚀 Slavnem Server 🌟</h1>
+<h1 align="center">🚀 Slavnem Server</h1>
 
 <!-- Kısa Açıklama -->
 <p align="left">
@@ -9,7 +9,8 @@
     <a href="https://github.com/Slavnem/MainServer"><strong>Projeyi İncele »</strong></a>
 </p>
 
-# Requirements
+<!-- İhtiyaçkar -->
+<h2 align="center">🌟 Requirements</h2>
 `Linux/GNU`
 `Nginx`
 `MySQL`
