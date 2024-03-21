@@ -4,9 +4,10 @@ TR: Slavnem içn açık kaynak kodlu bir website tasarımı yapıp resmi olarak 
 
 EN: Designing an open source website for Slavnem and preparing it for official launch. Security and bug fixes are in progress. Developing and sharing. Running on a local Debian (Linux) server...
 
-## Nginx
-## MySQL
-## PHP 8.3
-## JavaScript
-## HTML5
-## CSS3
+## Packages
+`Nginx`
+`MySQL`
+`PHP 8.3`
+`JavaScript`
+`HTML5`
+`CSS3`
