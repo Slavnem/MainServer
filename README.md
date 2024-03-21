@@ -10,9 +10,7 @@
     <br />
     <br />
     <a href="https://github.com/Slavnem/MainServer">🐞 Hata Bildir</a>
-    ·
     <a href="https://github.com/Slavnem/MainServer">🎁 Öneri Yap</a>
-    ·
     <a href="https://github.com/Slavnem/MainServer">⭐ Projeyi Yıldızla</a>
 </p>
 
