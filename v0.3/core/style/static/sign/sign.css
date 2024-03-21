@@ -1,0 +1,147 @@
+/* IMPORT ROOT */
+@import url("/core/style/static/root/root.css");
+
+/* ROOT */
+:root {
+    --sign-page-color: var(--color-off-white);
+    --sign-page-backgroundcolor: rgba(var(--rgb-color-custom-v7), 0.5);
+    --sign-page-fontfamily: "font-aeronaut";
+
+    --sign-text-title-color: var(--color-off-white);
+    --sign-text-description-color: var(--color-light-gray-v2);
+
+    --sign-input-color: var(--color-custom-v2);
+
+    --sign-input-submit-btn-color: var(--color-custom-v2);
+    --sign-input-submit-btn-backgroundcolor: var(--color-off-white);
+    --sign-input-submit-btn-transition: 0.24s ease-in-out;
+
+    --sign-input-submit-btn-hover-color: var(--color-off-white);
+    --sign-input-submit-btn-hover-backgroundcolor: var(--color-forest-green);
+
+    --sign-input-redirect-btn-color: var(--color-custom-v8);
+    --sign-input-redirect-btn-backgroundcolor: "transparent";
+
+    --sign-input-redirect-btn-hover-color: var(--color-off-white);
+    --sign-input-redirect-btn-hover-backgroundcolor: "transparent";
+
+    --sign-page-color-btn-passwordshow: var(--color-forest-green);
+    --sign-page-background-btn-passwordshow: "transparent";
+    --sign-page-color-hover-btn-passwordshow: var(--color-dark-charcoal);
+}
+
+/* SIGN MAIN */
+.signmain {
+    width: 100%;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: var(--sign-page-fontfamily);
+    padding: clamp(0.5rem, 5dvh, 5dvh) clamp(0.5rem, 5%, 5%);
+}
+
+/* SIGN AREA */
+.signarea {
+    width: auto;
+    max-width: 1260px;
+    align-items: center;
+    justify-content: center;
+    color: var(--sign-page-color);
+    background-color: var(--sign-page-backgroundcolor);
+    border: none;
+    border-radius: 0.5rem;
+    padding: clamp(0.5rem, 5dvh, 2rem) clamp(0.5rem, 5%, 2rem);
+    backdrop-filter: blur(0.5rem);
+}
+
+/* TITLE AREA, INPUT AREA, SUBMIT AREA */
+.titlearea,
+.inputarea,
+.submitarea,
+.signuparea {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: clamp(0.25rem, 5dvh, 0.75rem) clamp(0.25rem, 5%, 0.5rem);
+}
+
+/* TITLE AREA -> TEXT AREA */
+.titlearea .titlearea_textarea {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TEXT AREA -> TITLE */
+.titlearea_textarea .textarea_title {
+    color: var(--sign-text-title-color);
+    font-size: clamp(0.9rem, 5vw, 2.5rem);
+    margin: clamp(0.25rem, 5dvh, 0.5rem) 0;
+}
+
+/* TEXT AREA -> DESCRIPTION */
+.titlearea_textarea .textarea_description {
+    color: var(--sign-text-description-color);
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
+    margin: clamp(0.25rem, 5dvh, 0.5rem) 0;
+}
+
+/* INPUT AREA -> INPUT DATA */
+.inputarea .input_data {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+    font-family: var(--sign-page-fontfamily);
+    font-size: clamp(0.9rem, 5%, 1.1rem);
+    color: var(--sign-input-color);
+    padding: clamp(0.25rem, 4dvh, 0.75rem) clamp(0.25rem, 5%, 1.25rem);
+    margin: clamp(0.125rem, 4dvh, 0.25rem) 0;
+}
+
+/* SUBMIT AREA -> SUBMIT BUTTON */
+.submitarea .input_submit_btn {
+    width: 100%;
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--sign-input-submit-btn-color);
+    background-color: var(--sign-input-submit-btn-backgroundcolor);
+    padding: clamp(0.25rem, 5dvh, 0.75rem) clamp(0.5rem, 10%, 2.5rem);
+    font-family: var(--sign-page-fontfamily);
+    font-size: clamp(0.9rem, 5vw, 1rem);
+    cursor: pointer;
+    transition: var(--sign-input-submit-btn-transition);
+}
+
+.input_submit_btn:hover {
+    color: var(--sign-input-submit-btn-hover-color);
+    background-color: var(--sign-input-submit-btn-hover-backgroundcolor);
+}
+
+/* SIGNUP AREA -> REDIRECT BUTTON */
+.redirect_btn {
+    width: 100%;
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--sign-input-redirect-btn-color);
+    background-color: var(--sign-input-redirect-btn-backgroundcolor);
+    padding: clamp(0.25rem, 5dvh, 0.75rem) clamp(0.5rem, 10%, 2.5rem);
+    font-family: var(--sign-page-fontfamily);
+    font-size: clamp(0.9rem, 5vw, 1rem);
+    cursor: pointer;
+    transition: var(--sign-input-submit-btn-transition);
+}
+
+.redirect_btn:hover {
+    color: var(--sign-input-redirect-btn-hover-color);
+    background-color: var(--sign-input-redirect-btn-hover-backgroundcolor);
+}
