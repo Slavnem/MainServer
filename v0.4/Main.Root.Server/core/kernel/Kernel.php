@@ -89,8 +89,8 @@ switch($REDIRECT_URL) {
 
             // parametreler
             $PARAMS = array(
-                "username" => $POSTDATA["username"],
-                "password" => $POSTDATA["password"]
+                SessionStruct::$column_username => $POSTDATA[SessionStruct::$column_username],
+                SessionStruct::$column_password => $POSTDATA[SessionStruct::$column_password]
             );
 
             // Kullanıcı verilerini alıyoruz
