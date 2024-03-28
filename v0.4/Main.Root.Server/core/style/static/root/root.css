@@ -1,0 +1,155 @@
+/* FONTS */
+@import url("/core/style/static/root/font.css");
+
+:root {
+    /* COLORS */
+    --color-blue: #3F418D;
+    --color-pastel-pink: #F9EDED;
+    --color-dark-charcoal: 17,26,36;
+    --color-bright-yellow: #F8EE00;
+    --color-cherry-red: #9A0001;
+    --color-off-white: #FCF7F7;
+    --color-baby-blue: #9DB0EC;
+    --color-dark-blue: #00246B;
+    --color-light-blue: #CADCFC;
+    --color-sky-blue: #9DB1EA;
+    --color-bubblegum-pink: #E47E98;
+    --color-cherry-red-v2: #C83642;
+    --color-bubblegum-pink-v2: #F4CCD2;
+    --color-forest-green: #396C2F;
+    --color-moss-green: #A3C664;
+    --color-mignight-blue: #1E2761;
+    --color-royal-blue: #408EC6;
+    --color-burgundy-red: #7A2048;
+    --color-terracotta-red: #B75A48;
+    --color-light-beige: #E8ECD6;
+    --color-muted-teal: #B2C6B6;
+    --color-pastel-olive-green: #A1BE95;
+    --color-salmon-pink: #F98866;
+    --color-deep-periwinkle: #735DA5;
+    --color-soft-lilac: #D3C5E5;
+    --color-seafoam-green: #65A4AC;
+    --color-light-blue-v2: #C4DEE5;
+    --color-teal: #1F948B;
+    --color-light-green: #69B086;
+    --color-dark-green: #31473A;
+    --color-light-gray: #EDF4F2;
+    --color-cranberry-red: #F42448;
+    --color-bubblegum: #F96674;
+    --color-deep-blue: #355E95;
+    --color-orange-red: #FB6341;
+    --color-yellow-orange: #FEBA00;
+    --color-mauve: #962E2A;
+    --color-dusty-rose: #E3867D;
+    --color-soft-blue-gray: #CEE6F2;
+    --color-dark-reddish-brown: #330000;
+    --color-taupe: #73605B;
+    --color-light-peachy-brown: #D09683;
+    --color-dark-navyblue: #1D00B4;
+    --color-bright-scarlet: #CB0000;
+    --color-light-lemon-yellow: #FBF5AA;
+    --color-teal-blue: #1995AD;
+    --color-light-blue-v3: #A1D6E2;
+    --color-light-gray-v2: #F1F1F2;
+    --color-deep-navyblue: #002C54;
+    --color-bright-red: #C5001A;
+    --color-pale-pink: #FDF6F6;
+    --color-dark-chestnut-brown: #46211A;
+    --color-burnt-sienna: #A43820;
+    --color-soft-cream: #F1D3B2;
+    --color-dark-charcoal: #292F31;
+    --color-deep-rust: #753424;
+    --color-sky-blue: #8FAEC4;
+
+    --color-custom-blue-v1: #00b3ff;
+
+    --color-custom-v1: #222831;
+    --color-custom-v2: #393E46;
+    --color-custom-v3: #00ADB5;
+    --color-custom-v4: #EEEEEE;
+    --color-custom-v5: #E23E57;
+    --color-custom-v6: #EA5455;
+    --color-custom-v7: #090C0B;
+    --color-custom-v8: #AFAFAF;
+
+    /* HEX ELITE */
+    --color-elite-white-dark-extra: #b4b4b4;
+    --color-elite-white-dark: #cfcfcf;
+    --color-elite-white-base: #e8e8e8;
+    --color-elite-white-light: #f9f9f9;
+    --color-elite-white-light-extra: #ffffff;
+
+    --color-elite-gray-dark-extra: #878787;
+    --color-elite-gray-dark: #969696;
+    --color-elite-gray-base: #a3a3a3;
+    --color-elite-gray-light: #b3b3b3;
+    --color-elite-gray-light-extra: #b8b8b8;
+
+    --color-elite-black-dark-extra: #000000;
+    --color-elite-black-dark: #111111;
+    --color-elite-black-base: #222222;
+    --color-elite-black-light: #333333;
+    --color-elite-black-light-extra: #444444;
+
+    --color-elite-red-light: #ff5b4f;
+    --color-elite-red-light-extra: #ff776d;
+
+    --color-elite-blue-dark-extra: #0082a8;
+    --color-elite-blue-dark: #00a8da;
+    --color-elite-blue-base: #09c6ff;
+    --color-elite-blue-light: #2fcfff;
+    --color-elite-blue-light-extra: #5fdaff;
+
+    /* RGB ELITE */
+    --color-rgb-elite-white-dark-extra: 180,180,180;
+    --color-rgb-elite-white-dark: 207,207,207;
+    --color-rgb-elite-white-base: 232,232,232;
+    --color-rgb-elite-white-light: 249,249,249;
+    --color-rgb-elite-white-light-extra: 255,255,255;
+
+    --color-rgb-elite-gray-dark-extra: 135,135,135;
+    --color-rgb-elite-gray-dark: 150,150,150;
+    --color-rgb-elite-gray-base: 163,163,163;
+    --color-rgb-elite-gray-light: 179,179,179;
+    --color-rgb-elite-gray-light-extra: 184,184,184;
+
+    --color-rgb-elite-black-dark-extra: 0,0,0;
+    --color-rgb-elite-black-dark: 17,17,17;
+    --color-rgb-elite-black-base: 34,34,34;
+    --color-rgb-elite-black-light: 51,51,51;
+    --color-rgb-elite-black-light-extra: 68,68,68;
+
+    --color-rgb-elite-red-light: 255,91,79;
+    --color-rgb-elite-red-light-extra: 255,119,109;
+
+    --color-rgb-elite-blue-dark-extra: 0,130,168;
+    --color-rgb-elite-blue-dark: 0,168,218;
+    --color-rgb-elite-blue-base: 9,198,255;
+    --color-rgb-elite-blue-light: 47,207,255;
+    --color-rgb-elite-blue-light-extra: 95,128,255;
+
+
+    /* RGB COLORS */
+    --rgb-color-custom-v7: 9,12,11;
+}
+
+/* ALL */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* BODY */
+body {
+    color: var(--color-elite-white-base);
+    background: var(--color-elite-black-base);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}

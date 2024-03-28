@@ -1,0 +1,202 @@
+/* IMPORT ROOT */
+@import url("/core/style/static/root/root.css");
+
+/* ROOT */
+:root {
+    --sign-page-color: var(--color-elite-white-dark);
+    --sign-page-backgroundcolor: rgba(var(--color-rgb-elite-black-dark), 0.5);
+    --sign-page-boxshadowcolor: rgba(var(--color-rgb-elite-black-dark), 0.5);
+    --sign-page-fontfamily: "font-aeronaut";
+    
+    --sign-area-maxwidth: 1260px;
+
+    --sign-text-title-color: var(--color-elite-white-light);
+    --sign-text-description-color: var(--color-elite-gray-light);
+    --sign-text-fontfamily: "font-aeronaut";
+
+    --sign-input-color: var(--color-elite-black-light-extra);
+    --sign-input-backgroundcolor: var(--color-elite-white-light-extra);
+    --sign-input-boxshadow: 0 0 30px 3px rgba(var(--color-rgb-elite-white-light-extra), 0.1);
+
+    --sign-input-submit-btn-color: var(--color-elite-black-light-extra);
+    --sign-input-submit-btn-backgroundcolor: var(--color-elite-white-light-extra);
+    --sign-input-submit-btn-boxshadow: 0 0 30px 3px rgba(var(--color-rgb-elite-white-light-extra), 0.1);
+    --sign-input-submit-btn-transition: 0.24s ease-in-out;
+
+    --sign-input-submit-btn-hover-color: var(--color-elite-white-light);
+    --sign-input-submit-btn-hover-backgroundcolor: var(--color-elite-blue-base);
+    --sign-input-submit-btn-hover-boxshadow: 0 0 30px 3px rgba(var(--color-rgb-elite-blue-base), 0.5);
+
+    --sign-forgotpwd-btn-color: var(--color-elite-gray-dark);
+    --sign-forgotpwd-btn-backgroundcolor: "transparent";
+    --sign-forgotpwd-btn-transition: 0.24s ease-in-out;
+
+    --sign-forgotpwd-btn-hover-color: var(--color-elite-white-light-extra);
+    --sign-forgotpwd-btn-hover-backgroundcolor: "transparent";
+
+    --sign-input-redirect-btn-color: var(--color-elite-gray-dark);
+    --sign-input-redirect-btn-backgroundcolor: "transparent";
+
+    --sign-input-redirect-btn-hover-color: var(--color-elite-white-light-extra);
+    --sign-input-redirect-btn-hover-backgroundcolor: "transparent";
+
+    --sign-page-color-btn-passwordshow: var(--color-forest-green);
+    --sign-page-background-btn-passwordshow: "transparent";
+    --sign-page-color-hover-btn-passwordshow: var(--color-dark-charcoal);
+}
+
+/* SIGN MAIN */
+.signmain {
+    width: 100%;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: var(--sign-page-fontfamily);
+    padding: clamp(0.5rem, 5dvh, 5dvh) clamp(0.5rem, 5%, 5%);
+}
+
+/* SIGN AREA */
+.signarea {
+    width: auto;
+    max-width: var(--sign-area-maxwidth);
+    align-items: center;
+    justify-content: center;
+    color: var(--sign-page-color);
+    background-color: var(--sign-page-backgroundcolor);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0 30px 1px var(--sign-page-boxshadowcolor);
+    padding: clamp(0.5rem, 5dvh, 2rem) clamp(0.5rem, 5%, 2rem);
+    backdrop-filter: blur(0.5rem);
+    overflow: hidden;
+}
+
+/* TITLE AREA, INPUT AREA, SUBMIT AREA */
+.titlearea,
+.inputarea,
+.submitarea,
+.signuparea {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: clamp(0.25rem, 5dvh, 0.75rem) clamp(0.25rem, 5%, 0.5rem);
+}
+
+.titlearea,
+.inputarea,
+.submitarea {
+    margin: clamp(0.25rem, 2dvh, 0.5rem) 0 0 0;
+}
+
+/* TITLE AREA -> TEXT AREA */
+.titlearea .titlearea_textarea {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--sign-text-fontfamily);
+}
+
+/* TEXT AREA -> TITLE */
+.titlearea_textarea .textarea_title {
+    color: var(--sign-text-title-color);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin: clamp(0.25rem, 5dvh, 0.5rem) 0;
+}
+
+/* TEXT AREA -> DESCRIPTION */
+.titlearea_textarea .textarea_description {
+    color: var(--sign-text-description-color);
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    margin: clamp(0.5rem, 5dvh, 0.75rem) 0;
+}
+
+/* INPUT AREA -> INPUT DATA */
+.inputarea .input_data {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+    font-family: var(--sign-page-fontfamily);
+    font-size: clamp(0.8rem, 3vw, 0.9rem);
+    color: var(--sign-input-color);
+    background: var(--sign-input-backgroundcolor);
+    box-shadow: var(--sign-input-boxshadow);
+    padding: clamp(0.25rem, 4dvh, 0.75rem) clamp(0.25rem, 5%, 1.25rem);
+    margin: clamp(0.125rem, 4dvh, 0.25rem) 0;
+}
+
+/* FORGOT AREA */
+.forgotarea {
+    width: 100%;
+    display: flex;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    align-items: center;
+    text-align: center;
+    font-family: var(--sign-page-fontfamily);
+    padding: 0 clamp(0.25rem, 5%, 0.5rem) clamp(0.125rem, 2dvh, 0.25rem) clamp(0.25rem, 5%, 0.5rem);
+    margin: 0;
+}
+
+/* FORGOT AREA -> FORGOT BUTTON */
+.forgotarea .forgot_btn {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    color: var(--sign-forgotpwd-btn-color);
+    background-color: var(--sign-forgotpwd-btn-backgroundcolor);
+    transition: var(--sign-forgotpwd-btn-transition);
+}
+
+.forgot_btn:hover {
+    color: var(--sign-forgotpwd-btn-hover-color);
+    background-color: var(--sign-forgotpwd-btn-hover-backgroundcolor);
+}
+
+/* SUBMIT AREA -> SUBMIT BUTTON */
+.submitarea .input_submit_btn {
+    width: 100%;
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--sign-input-submit-btn-color);
+    background-color: var(--sign-input-submit-btn-backgroundcolor);
+    box-shadow: var(--sign-input-submit-btn-boxshadow);
+    padding: clamp(0.25rem, 5dvh, 0.75rem) clamp(0.5rem, 10%, 2.5rem);
+    font-family: var(--sign-page-fontfamily);
+    font-size: clamp(0.9rem, 5vw, 0.9rem);
+    cursor: pointer;
+    transition: var(--sign-input-submit-btn-transition);
+}
+
+.input_submit_btn:hover {
+    color: var(--sign-input-submit-btn-hover-color);
+    background-color: var(--sign-input-submit-btn-hover-backgroundcolor);
+    box-shadow: var(--sign-input-submit-btn-hover-boxshadow);
+}
+
+/* SIGNUP AREA -> REDIRECT BUTTON */
+.redirect_btn {
+    width: 100%;
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--sign-input-redirect-btn-color);
+    background-color: var(--sign-input-redirect-btn-backgroundcolor);
+    padding: clamp(0.25rem, 5dvh, 0.75rem) clamp(0.5rem, 10%, 2.5rem);
+    font-family: var(--sign-page-fontfamily);
+    font-size: clamp(0.8rem, 3vw, 0.9rem);
+    cursor: pointer;
+    transition: var(--sign-input-submit-btn-transition);
+}
+
+.redirect_btn:hover {
+    color: var(--sign-input-redirect-btn-hover-color);
+    background-color: var(--sign-input-redirect-btn-hover-backgroundcolor);
+}
